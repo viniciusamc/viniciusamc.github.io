@@ -37,3 +37,37 @@ header{
   font-size: 1.6rem;
   font-weight: regular;
 }
+
+.profile {
+  width: 100vw;
+  height: 100vh;
+  padding: 1.5rem;
+  margin-top: 40vw;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.name h1 {
+  font-weight: lighter;
+  font-size: 2.4rem;
+  color: var(--white);
+}
+
+.name h2{
+  font-weight: lighter;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.midias{
+  margin-top: 90vw;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
