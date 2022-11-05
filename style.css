@@ -17,6 +17,7 @@
 body{
   font-family: 'Ubuntu', sans-serif;
   background-color: #000;
+  font-size: 1.6rem;
 }
 
 header{
@@ -192,6 +193,7 @@ nav a:hover{
   transition-duration: 250ms;
 }
 
+
 @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -199,4 +201,31 @@ nav a:hover{
   50% {
     opacity: 0;
   }
+}
+
+/* SOBRE MIM */
+
+.about-text {
+  color: var(--white);
+  padding: 0 2rem;
+  width: 95vw;
+  max-width: 80rem;
+  margin: 8vw auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  text-align: center;
+}
+
+.about-text h1{
+  font-size: clamp(3.2rem, 3.2rem + 1vw, 4rem);
+}
+
+.about-text p {
+  font-size: clamp(1.6rem, .1rem + 1vw, 2.4rem);
+  font-weight: lighter;
+  text-align: center;
+  line-height: 180%;
+  letter-spacing: .1rem;
 }
