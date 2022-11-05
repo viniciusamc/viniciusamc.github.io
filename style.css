@@ -67,7 +67,9 @@ nav a {
 }
 
 nav a:hover{
-  background-color: #00B2FF;
+  letter-spacing: .8rem;
+  color: var(--blue);
+  transition-duration: 300ms;
 }
 
 #btn-menu {
@@ -119,8 +121,12 @@ nav a:hover{
 
 .profile {
   width: 100vw;
+  height: calc(100vh - 5.1rem - 6rem);
   padding: 1.5rem;
-  /* margin-top: 40vw; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .name {
@@ -131,21 +137,56 @@ nav a:hover{
 
 .name h1 {
   font-weight: lighter;
-  font-size: 2.4rem;
+  font-size: clamp(3.2rem, 3.2rem + 1vw, 6rem);
   color: var(--white);
+}
+
+.name h1::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
 }
 
 .name h2{
   font-weight: lighter;
-  font-size: 1.4rem;
+  font-size: clamp(2.4rem, 2.4rem + 1vw, 4rem);
   text-transform: uppercase;
   color: var(--blue);
 }
 
+.name h2::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
 .midias{
-  /* margin-top: 90vw; */
   display: flex;
+  margin-bottom: 2rem;
   gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+.midias img {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.midias img:hover{
+  filter: opacity(0.1);
+  transition-duration: 250ms;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
