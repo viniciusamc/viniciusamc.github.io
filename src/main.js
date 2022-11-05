@@ -22,12 +22,26 @@ window.onpopstate = handleLocation;
 window.route = route;
 handleLocation();
 
+const nav  = document.querySelector("nav");
 const btnMenu = document.querySelector("header nav button");
+const navHome = document.querySelector("nav ul li a")
+const navAbout = document.querySelector(".nav-about")
+const navSkills = document.querySelector(".nav-skills")
+const navProjects = document.querySelector(".nav-projects")
+
+function toggleMenu(){
+  nav.classList.remove("active");
+}
 
 btnMenu.addEventListener("click", () => {
-  const nav  = document.querySelector("nav");
   nav.classList.toggle("active");
 })
+
+navHome.addEventListener("click", toggleMenu);
+navAbout.addEventListener("click", toggleMenu);
+navSkills.addEventListener("click", toggleMenu);
+navProjects.addEventListener("click", toggleMenu);
+
 
 function typeWriter(elemento) {
   const textoArray = elemento.innerHTML.split('');
