@@ -38,6 +38,33 @@ header{
   font-weight: regular;
 }
 
+nav {
+  display: flex;
+}
+
+nav button {
+  background: none;
+  border: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+nav a:hover{
+  background-color: #00B2FF;
+}
+
 .profile {
   width: 100vw;
   padding: 1.5rem;
