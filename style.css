@@ -133,6 +133,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  margin-top: -25vw;
 }
 
 .name h1 {
