@@ -21,47 +21,16 @@
       </button>
       
       <ul id="menu">
-        <li><a href="/">Início</a></li>
-        <li><a href="/">Sobre</a></li>
-        <li><a href="/">Habilidades</a></li>
-        <li><a href="/">Projetos</a></li>
+        <li><a href="/home" onclick="route()">Home</a></li>
+        <li><a href="/sobre" onclick="route()">Sobre</a></li>
+        <li><a href="/habilidades" onclick="route()">Habilidades</a></li>
+        <li><a href="/projetos" onclick="route()">Projetos</a></li>
       </ul>
-    </nav>
-
-
+    </nav>  
   </header>
 
-  <section class="profile">
-    <div class="name">
-      <h1 class="name-write">Vinicius Martins</h1>
-      <h2 class="stack">Full-stack developer</h2>
+  <div class="content"></div>
 
-      <script>
-        function typeWriter(elemento) {
-          const textoArray = elemento.innerHTML.split('');
-          elemento.innerHTML = '';
-          textoArray.forEach((letra, i) => {
-            setTimeout(() => elemento.innerHTML += letra, 50 * i);
-          });
-        }
-      
-        const titulo = document.querySelector(".name-write");
-        const stack = document.querySelector(".stack")
-        typeWriter(stack);
-        typeWriter(titulo);
-      </script>
-
-    </div>
-  </section>
-
-  <footer>
-    <div class="midias">
-      <a href=""><img src="src/assets/svg/email.svg" alt="Email para contato"></a>
-      <a href=""><img src="src/assets/svg/linkedin.svg" alt="Linkedin"></a>
-      <a href="https://github.com/viiniciusgm" target="_blank"><img src="src/assets/svg/github.svg" alt="github"></a>
-    </div>
-  </footer>
-
-  <script src="src/main.js"></script>
+  <script src="src/js/main.js" type="module"></script>
 </body>
 </html>
