@@ -165,6 +165,12 @@ nav a:hover{
 }
 
 .midias{
+    position: fixed;
+    bottom: 1rem;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
   display: flex;
   margin-bottom: 2rem;
   gap: 2rem;
