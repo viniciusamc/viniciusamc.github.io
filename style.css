@@ -117,6 +117,10 @@ nav a:hover{
     visibility: visible;
     overflow-y: auto;
   }
+
+  .name {
+    margin-top: -25vw;
+  }
 }
 
 .profile {
@@ -133,7 +137,6 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  margin-top: -25vw;
 }
 
 .name h1 {
