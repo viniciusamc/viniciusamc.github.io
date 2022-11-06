@@ -22,6 +22,20 @@ body{
   overflow-x: hidden;
 }
 
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; 
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important; 
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;           
+}
+
 ::-webkit-scrollbar {
   width: 1rem
 }
@@ -498,4 +512,81 @@ svg {
 [data-anime].animate{
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.contact {
+  width: 90vw;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form {
+  width: 90vw;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.contact fieldset h1 {
+  font-size: clamp(2.4rem, 2.4rem + 1vw, 3.2rem);
+  color: var(--white);
+  text-align: center;
+}
+
+.contact fieldset {
+  width: 100%;
+  max-width: 70rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+
+  border: none;
+}
+
+.input-wrapper input, textarea {
+  width: 100%;
+  max-width: 50rem;
+  height: 5rem;
+  border-radius: .4rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper input::placeholder, .input-wrapper textarea::placeholder {
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+  opacity: .6;
+}
+
+.input-wrapper textarea {
+  width: 100%;
+  max-width: 50rem;
+  height: 15rem;
+  resize: vertical;
+}
+
+form button {
+  width: 100%;
+  max-width: 50rem;
+  padding: 1.4rem;
+  font-size: 2.4rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: var(--white);
+
+  border-radius: .8rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  transition-duration: 200ms;
 }

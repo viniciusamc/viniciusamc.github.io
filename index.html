@@ -50,17 +50,17 @@
   <section class="about" id="sobremim" data-anime="left">
     <div class="about-text">
       <h1 class="sobre-mim">Sobre mim</h1>
-      <p>Olá me chamo Vinicius, tenho 18 anos e atualmente estou buscando vagas de emprego para desenvolvimento Full-stack. <br> Fiz ensino médio integrado ao técnico em Informática para a internet, na ETEC de Santa Isabel, onde eu aprendi muito, como trabalhar em equipe, gestão de tempo, ler e fazer documentações de projetos meus, aprendi sobre logica de programação utilizando C# e JAVA, programação web utilizando HTML, CSS, PHP aprendi muito sobre banco de dados, as formas normais (1FN, 2FN e 3FN) e modelagem de banco de dados.<br> Atualmente estou cursando uma formação de desenvolvimento Full-stack na Rocketseat, curso Explorer. Onde aprendo muito sobre HTML, CSS e Javascript, com diversas bibliotecas e frameworks tais como ReactJs, NodeJs, SGBDs, e Git.</p>
+      <p>Olá me chamo Vinicius, tenho 18 anos e atualmente estou buscando vagas de emprego para desenvolvimento Full-stack. <br> Fiz ensino médio integrado ao técnico em Informática para a internet, na ETEC de Santa Isabel, onde eu aprendi muito, como trabalhar em equipe, gestão de tempo, ler e fazer documentações de projetos meus, aprendi sobre lógica de programação utilizando C# e JAVA, programação web utilizando HTML, CSS, PHP. Aprendi muito sobre banco de dados, as formas normais (1FN, 2FN e 3FN) e modelagem de banco de dados.<br> Atualmente estou cursando uma formação de desenvolvimento Full-stack na Rocketseat, curso Explorer. Onde aprendo muito sobre HTML, CSS e Javascript, com diversas bibliotecas e frameworks tais como ReactJs, NodeJs, SGBDs, e Git.</p>
     </div>
   </section>
   
-  <section id="skills" data-anime="left">
+  <section id="skills">
     <h1>Habilidades</h1>
 
     
     <div class="skills-card">
       <div class="dashboard">
-        <div class="skill-card">
+        <div class="skill-card" data-anime="left">
           <img src="src/assets/svg/html.svg" alt="" srcset="">
           <svg>
             <circle class="bg" cx="57" cy="57" r="52" />
@@ -68,7 +68,7 @@
           </svg>
         </div>
         
-        <div class="skill-card">
+        <div class="skill-card"  data-anime="down">
           <img src="src/assets/svg/CSS.svg" alt="">
           <svg>
             <circle class="bg" cx="57" cy="57" r="52" />
@@ -76,7 +76,7 @@
           </svg>
         </div>
         
-        <div class="skill-card">
+        <div class="skill-card"  data-anime="right">
           <img src="src/assets/svg/javascript.svg" alt="" class="js-card">
           <svg>
             <circle class="bg" cx="57" cy="57" r="52" />
@@ -190,6 +190,34 @@
           </div>
         </div> 
       </div>
+  </section>
+
+  <section class="contact">
+    <form action="https://formsubmit.co/viniciusmartinsdacunha1@gmail.com" method="POST">
+      <fieldset>
+        <h1>Contato</h1>
+        
+        <div class="input-wrapper">
+          <label for="name" class="sr-only">Nome</label>
+          <input type="text" name="name" placeholder="Nome" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        
+        <div class="input-wrapper">
+          <label for="message" class="sr-only">Mensagem</label>
+          <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+        
+        <div class="input-wrapper">
+          <button type="submit">Enviar</button>
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+      </fieldset>
+    </form>
   </section>
   
   <script src="src/main.js"></script>
