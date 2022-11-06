@@ -20,7 +20,19 @@ body{
   background-color: var(--dark-blue);
   font-size: 1.6rem;
   overflow-x: hidden;
+}
 
+::-webkit-scrollbar {
+  width: 1rem
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 1rem;
 }
 
 header{
@@ -392,7 +404,7 @@ svg {
   gap: 6rem;
 }
 
-@media (max-width: 1350px){
+@media (max-width: 1500px){
   .projects-content {
     grid-template-columns: repeat(2, 1fr);
   }

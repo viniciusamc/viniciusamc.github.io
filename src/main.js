@@ -10,6 +10,16 @@ const email = document.querySelector(".email");
 const stack = document.querySelector(".stack");
 const nav  = document.querySelector("nav");
 
+const profile = document.querySelector(".profile")
+const about = document.querySelector(".about");
+const skills = document.querySelector(".skills");
+const project = document.querySelector(".project");
+
+profile.scrollIntoView({behavior: "auto", block: "end"});
+about.scrollIntoView({behavior: "auto", block: "end"});
+skills.scrollIntoView({behavior: "auto", block: "end"});
+project.scrollIntoView({behavior: "auto", block: "end"});
+
 function toggleMenu(){
   nav.classList.remove("active");
 }
