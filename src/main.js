@@ -1,5 +1,5 @@
-const btnMenu = document.querySelector("header nav button");
 const navProjects = document.querySelector(".nav-projects");
+const btnMenu = document.querySelector("header nav button");
 const navSkills = document.querySelector(".nav-skills");
 const navHome = document.querySelector("nav ul li a");
 const navAbout = document.querySelector(".nav-about");
