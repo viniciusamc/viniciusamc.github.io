@@ -10,6 +10,7 @@
 :root{
   --blue: #00B2FF;
   --dark-blue: #0C0C17;
+  --dark-gray: #1E1E1E;
   --black: #000;
   --white: #fff;
 }
@@ -243,3 +244,43 @@ nav a:hover{
 
 /* SKILLS */
 
+#skills {
+  margin-top: 10vw;
+  width: 100vw;
+  text-align: center;
+}
+
+#skills h1 {
+  font-size: clamp(3.2rem, 3.2rem + 1vw, 4rem);
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+
+.skills-card {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.skill-card {
+  padding: 2rem;
+  background-color: var(--dark-gray);
+  border-radius: .8rem;
+  border: 2px solid var(--blue);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skill-card:hover{
+  transform: scale(1.05);
+  transition-duration: 150ms;
+  border: 2px solid var(--dark-gray);
+
+}
+
+@media (max-width: 680px) {
+  .skills-card{
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
