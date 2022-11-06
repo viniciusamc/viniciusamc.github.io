@@ -9,9 +9,9 @@
 </head>
 <body>
   <header>
-
+    <div class="header-content">
     <div class="logo">
-      <img src="src/assets/images/code-vm.png" alt="Logo">
+      <img src="src/assets/images/code-vm.svg" alt="Logo">
       <h4>Vinicius Martins</h4>
     </div>
 
@@ -21,16 +21,40 @@
       </button>
       
       <ul id="menu">
-        <li><a href="/" onclick="route()">Início</a></li>
-        <li class="nav-about"><a href="/about" onclick="route()">Sobre</a></li>
+        <li><a href="#sobremim">Início</a></li>
+        <li class="nav-about"><a href="#section">Sobre</a></li>
         <li class="nav-skills"><a href="/skills" onclick="route()">Habilidades</a></li>
         <li class="nav-projects"><a href="/projects" onclick="route()">Projetos</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <div id="main-page"></div>
+  <section class="profile">
+    <div class="name">
+      <h1 class="name-write">Vinicius Martins</h1>
+      <h2 class="stack">Full-stack developer</h2>
+    </div>
 
+    <div class="midias">
+      <a href=""><img src="src/assets/svg/email.svg" alt="Email para contato" class="email"></a>
+      <a href="https://www.linkedin.com/in/vinicius-martins-61814620a/" target="_blank" ><img src="src/assets/svg/linkedin.svg" alt="Linkedin" class="linkedin"></a>
+      <a href="https://github.com/viiniciusgm" target="_blank"><img src="src/assets/svg/github.svg" alt="github" class="github"></a>
+    </div>
+
+  </section>
+
+  <section class="about" id="sobremim">
+    <div class="about-text">
+      <h1 class="sobre-mim">Sobre mim</h1>
+      <p>Olá me chamo Vinicius, tenho 18 anos e atualmente estou buscando vagas de emprego para desenvolvimento Full-stack. <br> Fiz ensino médio integrado ao técnico em Informática para a internet, na ETEC de Santa Isabel, onde eu aprendi muito, como trabalhar em equipe, gestão de tempo, ler e fazer documentações de projetos meus, aprendi sobre logica de programação utilizando C# e JAVA, programação web utilizando HTML, CSS, PHP aprendi muito sobre banco de dados, as formas normais (1FN, 2FN e 3FN) e modelagem de banco de dados.<br> Atualmente estou cursando uma formação de desenvolvimento Full-stack na Rocketseat, curso Explorer. Onde aprendo muito sobre HTML, CSS e Javascript, com diversas bibliotecas e frameworks tais como ReactJs, NodeJs, SGBDs, e Git</p>;
+    </div>
+  </section>
+  
+  <section id="skills">
+    <h1>Habilidades</h1>
+  </section>
+  
   <script src="src/main.js"></script>
 </body>
 </html>

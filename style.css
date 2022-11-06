@@ -16,21 +16,26 @@
 
 body{
   font-family: 'Ubuntu', sans-serif;
-  background-color: #000;
+  background-color: var(--dark-blue);
   font-size: 1.6rem;
+  overflow-x: hidden;
+
 }
 
 header{
-  width: 100vw;
-  max-width: 1200px;
-  margin: 0 auto;
   background-color: var(--black);
+  width: 100vw;
+}
 
+.header-content {
   padding: 1.5rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .logo{
@@ -109,7 +114,7 @@ nav a:hover{
     margin: 0 auto;
   }
 
-  header {
+  .header-content {
     flex-direction: row-reverse;
   }
 
@@ -126,8 +131,9 @@ nav a:hover{
 
 .profile {
   width: 100vw;
-  height: calc(100vh - 5.1rem - 6rem);
+  height: 100vh;
   padding: 1.5rem;
+  background-color: var(--black);
 
   display: flex;
   flex-direction: column;
@@ -170,7 +176,7 @@ nav a:hover{
 }
 
 .midias{
-    position: fixed;
+    position: absolute;
     bottom: 1rem;
     right: 0;
     left: 0;
@@ -205,12 +211,17 @@ nav a:hover{
 
 /* SOBRE MIM */
 
+.about {
+  padding-top: 9vh;
+  background: linear-gradient(180deg, #000000 0%, #0C0C17 3.12%);
+}
+
 .about-text {
   color: var(--white);
   padding: 0 2rem;
-  width: 95vw;
-  max-width: 80rem;
-  margin: 8vw auto;
+  width: 90vw;
+  max-width: 70rem;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
@@ -229,3 +240,6 @@ nav a:hover{
   line-height: 180%;
   letter-spacing: .1rem;
 }
+
+/* SKILLS */
+

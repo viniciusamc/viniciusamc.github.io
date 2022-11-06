@@ -1,33 +1,14 @@
-const route = (event) => {
-  event = event || window.event;
-  event.preventDefault();
-  window.history.pushState({}, "", event.target.href);
-  handleLocation();
-}
-
-const routes = {
-  404: "/pages/404.html",
-  "/": "src/pages/index.html",
-  "/about": "/src/pages/about.html",
-}
-
-const handleLocation = async () => {
-  const { pathname } = window.location;
-  const route = routes[pathname] || routes["/"];
-  const html = await fetch(route).then((data) => data.text());
-  document.getElementById("main-page").innerHTML = html;
-}
-
-window.onpopstate = handleLocation;
-window.route = route;
-handleLocation();
-
-const nav  = document.querySelector("nav");
 const btnMenu = document.querySelector("header nav button");
-const navHome = document.querySelector("nav ul li a")
-const navAbout = document.querySelector(".nav-about")
-const navSkills = document.querySelector(".nav-skills")
-const navProjects = document.querySelector(".nav-projects")
+const navProjects = document.querySelector(".nav-projects");
+const navSkills = document.querySelector(".nav-skills");
+const navHome = document.querySelector("nav ul li a");
+const navAbout = document.querySelector(".nav-about");
+const linkedin = document.querySelector(".linkedin");
+const titulo = document.querySelector(".name-write");
+const github = document.querySelector(".github")
+const email = document.querySelector(".email");
+const stack = document.querySelector(".stack");
+const nav  = document.querySelector("nav");
 
 function toggleMenu(){
   nav.classList.remove("active");
@@ -35,6 +16,10 @@ function toggleMenu(){
 
 btnMenu.addEventListener("click", () => {
   nav.classList.toggle("active");
+})
+
+github.addEventListener("mouseover", () => {
+  github.classList.toggle(".github-message")
 })
 
 navHome.addEventListener("click", toggleMenu);
@@ -51,7 +36,5 @@ function typeWriter(elemento) {
   });
 }
 
-const titulo = document.querySelector(".name-write");
-const stack = document.querySelector(".stack")
 typeWriter(stack);
 typeWriter(titulo);
