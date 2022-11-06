@@ -50,6 +50,10 @@ header{
   font-weight: regular;
 }
 
+.logo img {
+  width: 2rem;
+}
+
 nav {
   display: flex;
 }
