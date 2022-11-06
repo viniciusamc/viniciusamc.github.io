@@ -10,15 +10,27 @@ const email = document.querySelector(".email");
 const stack = document.querySelector(".stack");
 const nav  = document.querySelector("nav");
 
-const profile = document.querySelector(".profile")
+const target = document.querySelectorAll("[data-anime]")
+const animationClass = "animate";
+
+function scroll(){
+  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
+
+  target.forEach(function(e){
+    if(windowTop > e.offsetTop){
+      e.classList.add(animationClass)
+    } else {
+      e.classList.remove(animationClass)
+    }
+    })  
+}
+
+scroll();
+window.addEventListener("scroll", () => {scroll()})
+
 const about = document.querySelector(".about");
 const skills = document.querySelector(".skills");
 const project = document.querySelector(".project");
-
-profile.scrollIntoView({behavior: "auto", block: "end"});
-about.scrollIntoView({behavior: "auto", block: "end"});
-skills.scrollIntoView({behavior: "auto", block: "end"});
-project.scrollIntoView({behavior: "auto", block: "end"});
 
 function toggleMenu(){
   nav.classList.remove("active");

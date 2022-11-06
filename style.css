@@ -82,6 +82,7 @@ nav ul {
   flex-direction: row;
   text-align: center;
   gap: 2rem;
+  scroll-behavior: smooth;
 }
 
 nav a {
@@ -474,4 +475,22 @@ svg {
 .project-footer img {
   width: 4rem;
   height: 4rem;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"]{
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
