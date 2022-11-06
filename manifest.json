@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio Desenvolvedor full-stack",
+  "short_name": "Portfolio Dev",
+  "display": "standalone",
+  "background_color": "#0C0C17",
+  "description": "Portfolio de Vinicius Martins, desenvolvedor full stack junior.",
+  "dir": "ltr",
+  "lang": "pt-br"
+}
