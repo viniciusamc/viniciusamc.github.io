@@ -15,6 +15,10 @@
   --white: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Ubuntu', sans-serif;
   background-color: var(--dark-blue);
@@ -164,7 +168,7 @@ nav a:hover{
 
 .profile {
   width: 100vw;
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 5rem);
   padding: 1.5rem;
   background-color: var(--black);
 
@@ -245,6 +249,10 @@ nav a:hover{
 /* SOBRE MIM */
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
   padding-top: 9vh;
   background: linear-gradient(180deg, #000000 0%, #0C0C17 3.12%);
 }
@@ -306,6 +314,9 @@ nav a:hover{
   align-items: center;
   gap: 1rem;
   justify-content: center;
+}
+.skills-text h1{
+  font-size: clamp(3.2rem, 3.2rem + 1vw, 4rem);
 }
 
 .js-card {

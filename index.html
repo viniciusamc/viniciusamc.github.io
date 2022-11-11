@@ -24,10 +24,11 @@
       </button>
       
       <ul id="menu">
-        <li><a href="#sobremim">Início</a></li>
-        <li class="nav-about"><a href="#section">Sobre</a></li>
+        <li><a href="#">Início</a></li>
+        <li class="nav-about"><a href="#sobremim">Sobre</a></li>
         <li class="nav-skills"><a href="#skills">Habilidades</a></li>
-        <li class="nav-projects"><a href="#projects">Projetos</a></li>
+        <li class="nav-projects"><a href="#project">Projetos</a></li>
+        <li class="nav-projects"><a href="#contact">Contato</a></li>
       </ul>   
     </nav>
     </div>
@@ -86,9 +87,14 @@
         
       </div>
     </div>
+
+    <div class="skills-text">
+      <h1>Certificados</h1>
+      <p></p>
+    </div>
   </section>
 
-  <section class="project">
+  <section class="project" id="project">
     <h1 class="title-section" data-anime="left">Projetos</h1>
 
     <div class="projects-content">
@@ -192,7 +198,7 @@
       </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <form action="https://formsubmit.co/viniciusmartinsdacunha1@gmail.com" method="POST">
       <fieldset>
         <h1>Contato</h1>
@@ -215,6 +221,7 @@
         <div class="input-wrapper">
           <button type="submit">Enviar</button>
         </div>
+        <input type="hidden" name="_next" value="http://192.168.31.254:3000/index.html>
         <input type="hidden" name="_captcha" value="false">
       </fieldset>
     </form>
