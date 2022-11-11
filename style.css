@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -252,7 +253,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 9vh;
   background: linear-gradient(180deg, #000000 0%, #0C0C17 3.12%);
 }
