@@ -10,6 +10,14 @@ const email = document.querySelector(".email");
 const stack = document.querySelector(".stack");
 const nav  = document.querySelector("nav");
 
+// Abrir modal, possível, será?
+// const dialog = document.querySelector("dialog");
+// const dialogButton = document.querySelector(".open-dialog")
+
+// dialogButton.addEventListener("click", () => {
+//   dialog.showModal()
+// })
+
 const target = document.querySelectorAll("[data-anime]")
 const animationClass = "animate";
 
