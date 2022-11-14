@@ -718,11 +718,15 @@ footer img {
   opacity: 0.3;
 }
 
-
 .projects:hover .image-text {
   animation-name: downTop;
   animation-duration: 300ms;
   opacity: 1;
+}
+
+.projects:hover .image-text a:hover {
+  background-color: #000;
+  transition-duration: 300ms;
 }
 
 .text a{
