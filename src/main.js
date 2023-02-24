@@ -5,12 +5,12 @@ const navHome = document.querySelector("nav ul li a");
 const navAbout = document.querySelector(".nav-about");
 const linkedin = document.querySelector(".linkedin");
 const titulo = document.querySelector(".name-write");
-const github = document.querySelector(".github")
+const github = document.querySelector(".github");
 const email = document.querySelector(".email");
 const stack = document.querySelector(".stack");
-const nav  = document.querySelector("nav");
+const nav = document.querySelector("nav");
+const yearSpan = document.querySelector(".year-date");
 
-// Abrir modal, possível, será?
 // const dialog = document.querySelector("dialog");
 // const dialogButton = document.querySelector(".open-dialog")
 
@@ -18,53 +18,58 @@ const nav  = document.querySelector("nav");
 //   dialog.showModal()
 // })
 
-const target = document.querySelectorAll("[data-anime]")
+const target = document.querySelectorAll("[data-anime]");
 const animationClass = "animate";
 
-function scroll(){
-  const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+function scroll() {
+  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
 
-  target.forEach(function(e){
-    if(windowTop > e.offsetTop){
-      e.classList.add(animationClass)
+  target.forEach(function (e) {
+    if (windowTop > e.offsetTop) {
+      e.classList.add(animationClass);
     } else {
-      e.classList.remove(animationClass)
+      e.classList.remove(animationClass);
     }
-    })  
+  });
 }
 
 scroll();
-window.addEventListener("scroll", () => {scroll()})
+window.addEventListener("scroll", () => {
+  scroll();
+});
 
 const about = document.querySelector(".about");
 const skills = document.querySelector(".skills");
 const project = document.querySelector(".project");
 
-function toggleMenu(){
+function toggleMenu() {
   nav.classList.remove("active");
 }
 
 btnMenu.addEventListener("click", () => {
   nav.classList.toggle("active");
-})
+});
 
 github.addEventListener("mouseover", () => {
-  github.classList.toggle(".github-message")
-})
+  github.classList.toggle(".github-message");
+});
 
 navHome.addEventListener("click", toggleMenu);
 navAbout.addEventListener("click", toggleMenu);
 navSkills.addEventListener("click", toggleMenu);
 navProjects.addEventListener("click", toggleMenu);
 
-
 function typeWriter(elemento) {
-  const textoArray = elemento.innerHTML.split('');
-  elemento.innerHTML = '';
+  const textoArray = elemento.innerHTML.split("");
+  elemento.innerHTML = "";
   textoArray.forEach((letra, i) => {
-    setTimeout(() => elemento.innerHTML += letra, 50 * i);
+    setTimeout(() => (elemento.innerHTML += letra), 50 * i);
   });
 }
 
 typeWriter(stack);
 typeWriter(titulo);
+
+const date = new Date();
+const year = date.getFullYear();
+yearSpan.innerHTML = year;
