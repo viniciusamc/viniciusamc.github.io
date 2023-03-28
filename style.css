@@ -317,6 +317,8 @@ nav a:hover{
   align-items: center;
   gap: 1rem;
   justify-content: center;
+
+  transition: all 1200ms ease-in-out;
 }
 
 .skill-card span{
@@ -334,7 +336,6 @@ nav a:hover{
 
 .skill-card:hover{
   transform: scale(1.05);
-  transition-duration: 150ms;
   border: 2px solid var(--dark-gray);
 }
 
